@@ -1,3 +1,4 @@
+let codes = [];
 let summary_data = [];
 $("tr.issuerow").each(function() {
     // ? Extract the issue ID
@@ -6,8 +7,17 @@ $("tr.issuerow").each(function() {
     // ? Extract the summary text of the issue
     let summary = $(this).find("td.nav.ghx-summary").text();
     summary = summary.trim();
-    // ? Log
+    // ?
+    codes.push(code);
     console.log(`${code} ${summary}`);
-    summary_data.push({code, summary});
+    // summary_data.push({
+    //     code,
+    //     summary
+    // });
+    // * Store the extracted data in the 'data' object
+    summary_data[code] = {
+        summary: summary,
+    };
 });
-console.table(summary_data);
+console.log(codes.join(", "))
+console.table(summary_data, ["code", "summary"]);
