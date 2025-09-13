@@ -10,10 +10,6 @@ $("tr.issuerow").each(function() {
     // ?
     codes.push(code);
     console.log(`${code} ${summary}`);
-    // summary_data.push({
-    //     code,
-    //     summary
-    // });
     // * Store the extracted data in the 'data' object
     summary_data[code] = {
         summary: summary,
