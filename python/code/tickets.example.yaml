@@ -1,0 +1,41 @@
+project_key: ENG
+
+tickets:
+  - slug: epic-auth
+    issue_type: Epic
+    summary: Authentication modernization
+    epic_name: Auth Modernization
+    description: |
+      Upgrade auth flows to support SSO and MFA.
+      This epic includes SAML support, MFA setup, and monitoring.
+    priority: High
+    labels:
+      - security
+      - auth
+    assignee_account_id: 5b10a2844c20165700ede21g
+
+  - issue_type: Story
+    summary: Implement SAML login
+    description: |
+      As an enterprise user, I can sign in using my company identity provider.
+      Acceptance criteria:
+      - SAML handshake succeeds for approved domains
+      - Failed auth returns actionable error
+    priority: High
+    labels:
+      - security
+      - saml
+    story_points: 8
+    assignee_account_id: 5b10a2844c20165700ede21g
+    parent_epic_slug: epic-auth
+
+  - issue_type: Task
+    summary: Add auth observability dashboard
+    description: |
+      Track login success rate, p95 latency, and failure categories.
+    priority: Medium
+    labels:
+      - auth
+      - observability
+    story_points: 3
+    parent_epic_slug: epic-auth
