@@ -1,0 +1,7 @@
+# Jira Issue Keys to Delete
+# List the keys of tickets you want to delete
+
+keys:
+  - "OC-XXXXX"  # Replace with actual issue key
+  - "OC-YYYYY"  # Replace with actual issue key
+  - "OC-ZZZZZ"  # Replace with actual issue key

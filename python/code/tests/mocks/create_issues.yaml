@@ -1,0 +1,36 @@
+project_key: ENG
+
+tickets:
+  - slug: epic-auth
+    issue_type: Epic
+    summary: Authentication modernization
+    epic_name: Auth Modernization
+    description: Upgrade auth flows to support SSO and MFA.
+    priority: High
+    labels:
+      - security
+      - auth
+    components:
+      - Authentication
+    assignee_username: Jane Doe
+
+  - issue_type: Story
+    summary: Implement SAML login
+    description: As an enterprise user, I can log in with my IdP.
+    priority: High
+    labels:
+      - security
+      - saml
+    story_points: 8
+    assignee_username: Jane Doe
+    parent_epic_slug: epic-auth
+
+  - issue_type: Task
+    summary: Add login observability dashboard
+    description: Track login success, latency, and failure classes.
+    priority: Medium
+    labels:
+      - auth
+      - observability
+    story_points: 3
+    parent_epic_slug: epic-auth

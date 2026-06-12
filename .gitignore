@@ -1,13 +1,42 @@
-# Python
-__pycache__/
-*.pyc
-
-# Local environment
-python/code/.env
-
 # Local input/output files
 python/code/tickets.yaml
 
 # OS/editor
+.DS_Store
+Thumbs.db
+
+# Environment — never commit real credentials
+environments/.env
+python/code/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db

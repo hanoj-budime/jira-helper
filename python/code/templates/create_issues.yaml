@@ -1,0 +1,70 @@
+project_key: OC
+
+tickets:
+  - slug: epic-jira-automation
+    issue_type: Epic
+    summary: AREA - Jira automation epic test
+    epic_name: Jira automation
+    description: This epic is for testing Jira automation features with a focus on checkout improvements.
+    priority: Minor
+    labels:
+      - AREA
+      - uncommitted
+    components:
+      - YOUR_COMPONENT_NAME
+    assignee_username: YOUR_USERNAME
+    category: "R&D"
+    investment_category: "Extend"
+    funded_by: "YOUR_FUNDER"
+    fix_versions: "1.0"
+    business_value: 150
+    job_size: 8
+    risk_opportunity_value: 8
+    time_criticality: 8
+    parent_link: "INIT-1"
+
+  - issue_type: Story
+    summary: Jira automation - story test
+    description: |
+      This story is for testing Jira automation features with a focus on checkout improvements.
+       **Acceptance Criteria:**
+       - AC1: The system should automatically create child tickets under the epic when specified.
+       - AC2: The system should assign the correct components to each ticket based on the provided list.
+       - AC3: The system should set the priority and labels correctly as defined in the ticket data.
+    priority: Minor
+    labels:
+      - AREA
+      - uncommitted
+    components:
+      - YOUR_COMPONENT_NAME
+    story_points: 5
+    assignee_username: YOUR_USERNAME
+    parent_epic_slug: epic-jira-automation
+    category: "R&D"
+    investment_category: "Extend"
+    funded_by: "YOUR_FUNDER"
+    fix_versions: "1.0"
+    estimated: "1w"
+
+  # - issue_type: Task
+  #   summary: Add checkout latency dashboard
+  #   description: Build dashboard panels for p50/p95 latency, timeout rate, and failure categories.
+  #   priority: Medium
+  #   labels:
+  #     - demo
+  #     - observability
+  #   story_points: 3
+  #   assignee_username: YOUR_USERNAME
+  #   parent_epic_slug: epic-jira-automation
+
+  # - issue_type: Bug
+  #   summary: Coupon code fails when code includes dash
+  #   description: Coupon validation rejects valid codes that contain hyphens.
+  #   priority: Medium
+  #   labels:
+  #     - demo
+  #     - checkout
+  #     - bug
+  #   story_points: 2
+  #   assignee_username: YOUR_USERNAME
+  #   parent_epic_slug: epic-jira-automation

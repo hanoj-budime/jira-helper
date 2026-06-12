@@ -1,0 +1,22 @@
+tickets:
+  - key: "OC-123"
+    summary: "Updated summary"
+    description: "Updated description."
+    priority: Minor
+    labels:
+      - AREA
+      - uncommitted
+    components:
+      - YOUR_COMPONENT_NAME
+    story_points: 8
+    assignee_username: YOUR_USERNAME
+    category: "R&D"
+    investment_category: "Extend"
+    funded_by: "YOUR_FUNDER"
+    fix_versions: "1.0"
+    estimated: "1w"
+    business_value: 150
+    job_size: 8
+    risk_opportunity_value: 8
+    time_criticality: 8
+    parent_link: "INIT-1"
